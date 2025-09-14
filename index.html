@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Digital Agency</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>YourAgency</h2>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Grow Your Business Digitally</h1>
+      <p>Websites, Social Media, SEO & PPC campaigns that drive results</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card"><img src="images/service-web.png"><h3>Website Design</h3><p>Modern responsive websites with SEO-ready structure.</p></div>
+      <div class="service-card"><img src="images/service-seo.png"><h3>SEO</h3><p>Boost your search rankings and attract organic traffic.</p></div>
+      <div class="service-card"><img src="images/service-ppc.png"><h3>PPC</h3><p>Targeted advertising campaigns to maximize ROI.</p></div>
+      <div class="service-card"><img src="images/service-social.png"><h3>Social Media</h3><p>Engage audiences and grow your brand presence.</p></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" style="background:#f1f1f1;">
+    <h2>Our Work</h2>
+    <div class="portfolio">
+      <img src="images/portfolio1.jpg" alt="Portfolio 1">
+      <img src="images/portfolio2.jpg" alt="Portfolio 2">
+      <img src="images/portfolio3.jpg" alt="Portfolio 3">
+      <img src="images/portfolio4.jpg" alt="Portfolio 4">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial"><p>"They transformed our online presence!"</p><strong>- Client A</strong></div>
+      <div class="testimonial"><p>"Professional and highly responsive team."</p><strong>- Client B</strong></div>
+      <div class="testimonial"><p>"Our traffic and leads doubled within months."</p><strong>- Client C</strong></div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" style="background:#f1f1f1;">
+    <h2>Pricing Plans</h2>
+    <div class="pricing">
+      <div class="plan"><img src="images/plan-basic.png"><h3>Basic</h3><span>$499</span><p>Website + SEO Starter Package</p></div>
+      <div class="plan"><img src="images/plan-standard.png"><h3>Standard</h3><span>$999</span><p>Website + SEO + Social Media Package</p></div>
+      <div class="plan"><img src="images/plan-premium.png"><h3>Premium</h3><span>$1999</span><p>Complete Digital Marketing Suite</p></div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section>
+    <h2>Subscribe to Our Newsletter</h2>
+    <div class="newsletter">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 YourAgency. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
